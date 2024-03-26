@@ -15,7 +15,7 @@ const Social = () => {
             </a>
             </div>
             <div class="download-cv">
-            <a href="caminho/para/seu-curriculo.pdf" download>Baixar CV</a>
+            <a href="./assets/docs/CV.pdf" download>Baixar CV</a>
             </div>
         </div>
         </section>
