@@ -18,11 +18,11 @@ export const SKILLS = [
     ],
   },
   {
-    title: "Tools",
+    title: "Ferramentas",
     icon: "./assets/images/tools-icon.png",
     skills: [
       { skill: "Git & GitHub", percentage: "100%" },
-      { skill: "Visual Studio Code", percentage: "100%" },
+      { skill: "VS Code", percentage: "100%" },
       { skill: "Design Responsivo", percentage: "80%" },
     ],
   },
