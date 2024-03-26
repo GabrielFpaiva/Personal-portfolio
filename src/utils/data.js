@@ -46,7 +46,6 @@ export const WORK_EXPERIENCE = [
       "No momento estou desenvolvendo um app de galeria de fotos usando React Native e Typescript para aumentar minha experiência com desenvolvimento mobile.",
       "O app tem como objetivo salvar fotos especificas em pastas especificas da maneira que você desejar.",
       "Também desejo implementar uma inteligencia artificial para reconhecimento de imagens e classificação das mesmas.",
-      "Link do repositorio: ... ",
     ],
   },
   {
@@ -66,7 +65,6 @@ export const WORK_EXPERIENCE = [
       "Utilizando Java spring boot programei um sistema desktop para um petshop.",
       "O sistema tinha como objetivo gerenciar os clientes, animais, produtos e vendas.",
       "Aprendi a usar o banco de dados MySQL e trabalhar com Spring Boot.",
-      "Link do repositorio: https://github.com/GabrielFpaiva/PetShop-Application.git ",
     ],
   },
   {
