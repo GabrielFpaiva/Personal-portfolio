@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-content">
         <h2>Construindo experiências digitais que inspiram</h2>
         <p>
-        Desenvolvedor Frontend e Mobile Apaixonado | Transformando Ideias em Soluções Web e Mobile Fluidas e Visualmente Impressionantes
+        Desenvolvedor Front-end e Mobile Apaixonado | Transformando Ideias em Soluções Web e Mobile Fluidas e Visualmente Impressionantes
         </p>
       </div>
 
