@@ -4,16 +4,16 @@ export const SKILLS = [
     icon: "./assets/images/frontend-icon.png",
     skills: [
       { skill: "HTML5 & CSS3", percentage: "100%" },
-      { skill: "JavaScript", percentage: "75%" },
-      { skill: "React", percentage: "70%" },
+      { skill: "JavaScript", percentage: "100%" },
+      { skill: "React", percentage: "100%" },
     ],
   },
   {
     title: "Mobile",
     icon: "./assets/images/backend-icon.png",
     skills: [
-      { skill: "Flutter", percentage: "85%" },
-      { skill: "React Native", percentage: "75%" },
+      { skill: "Flutter", percentage: "100%" },
+      { skill: "React Native", percentage: "85%" },
       { skill: "Java & Kotlin", percentage: "60%" },
     ],
   },
@@ -23,14 +23,14 @@ export const SKILLS = [
     skills: [
       { skill: "Git & GitHub", percentage: "100%" },
       { skill: "VS Code", percentage: "100%" },
-      { skill: "Design Responsivo", percentage: "80%" },
+      { skill: "Design Responsivo", percentage: "90%" },
     ],
   },
   {
     title: "Soft Skills",
     icon: "./assets/images/soft-skills-icon.png",
     skills: [
-      { skill: "Solução de problemas", percentage: "80%" },
+      { skill: "Solução de problemas", percentage: "90%" },
       { skill: "Colaboração", percentage: "95%" },
       { skill: "Atenção aos detalhes", percentage: "85%" },
       { skill: "Persistente", percentage: "100%" },
@@ -40,12 +40,12 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
   {
-    title: "Projeto - Aplicativo Mobile de Galeria de Fotos",
-    date: "Março - Atualmente",
+    title: "Site de Imobiliária - DS Imóveis",
+    date: "Agosto 2024 - Atualmente",
     responsibilities: [
-      "No momento estou desenvolvendo um app de galeria de fotos usando React Native e Typescript para aumentar minha experiência com desenvolvimento mobile.",
-      "O app tem como objetivo salvar fotos especificas em pastas especificas da maneira que você desejar.",
-      "Também desejo implementar uma inteligencia artificial para reconhecimento de imagens e classificação das mesmas.",
+      "Landing page para imobiliária",
+      "Feito em React e nextJS",
+      "Responsivo e com animações",
     ],
   },
   {
@@ -54,7 +54,6 @@ export const WORK_EXPERIENCE = [
     responsibilities: [
       "Desenvolvimento de aplicativos mobile usando Flutter",
       "Aplicativo para ingressos de eventos, convites e controle de acesso.",
-      "Nesse desenvolvimento, foi utilizado o Firebase para autenticação e armazenamento de dados.",
       "Aprendi a trabalhar com uma equipe multidisciplinar.",
     ],
   },
