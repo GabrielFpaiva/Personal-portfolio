@@ -16,28 +16,24 @@ Olá! Meu nome é Gabriel Fernandes, sou um desenvolvedor entusiasta e apaixonad
 Aqui estão algumas das minhas principais habilidades técnicas:
 
 ### Frontend
-![Frontend](./assets/images/frontend-icon.png)
 
 - **HTML5 & CSS3:** 100%
 - **JavaScript:** 100%
 - **React:** 100%
 
 ### Mobile
-![Mobile](./assets/images/backend-icon.png)
 
 - **Flutter:** 100%
 - **React Native:** 85%
 - **Java & Kotlin:** 60%
 
 ### Ferramentas
-![Ferramentas](./assets/images/tools-icon.png)
 
 - **Git & GitHub:** 100%
 - **VS Code:** 100%
 - **Design Responsivo:** 90%
 
 ### Soft Skills
-![Soft Skills](./assets/images/soft-skills-icon.png)
 
 - **Solução de problemas:** 90%
 - **Colaboração:** 95%
