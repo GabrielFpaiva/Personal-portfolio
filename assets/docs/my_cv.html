@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currículo Gabriel Fernandes Paiva</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: #1a1a2e;
+            color: white;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .sidebar p, .sidebar a {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .sidebar .contact-info, .sidebar .skills ul {
+            margin-bottom: 20px;
+        }
+
+        .sidebar .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar .skills ul li {
+            background-color: #007bff;
+            color: white;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-align: center;
+            width: 90%;
+        }
+
+        .content {
+            width: 70%;
+            padding: 40px 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #1a1a2e;
+            border-bottom: 2px solid #1a1a2e;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #1a1a2e;
+            margin: 20px 0;
+        }
+
+        .project-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-links {
+            padding: 15px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .links-card {
+            padding: 40px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Ajuste para cards de habilidades técnicas e frameworks */
+        .skills {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skills ul li {
+            background-color: #007bff;
+            color: white;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-align: center;
+            width: 48%;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+
+            .sidebar, .content {
+                display: block !important;
+            }
+
+            .sidebar {
+                background-color: #1a1a2e !important;
+                color: white !important;
+            }
+
+            a {
+                color: #007bff !important;
+            }
+
+            /* Reduzindo margens e padding para caber em uma página A4 */
+            .container {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="profile.png" alt="Foto de Gabriel">
+            <h1>Gabriel Fernandes <br>Paiva</h1>
+            <div class="contact-info">
+                <p><b>Email:</b> <a href="mailto:gabrielpaiva.jm@gmail.com">gabrielpaiva.jm@gmail.com</a></p>
+                <p><b>Telefone:</b> +55 83 993566540</p>
+            </div>
+
+            <div class="languages">
+                <h3>Idiomas</h3>
+                <p>Inglês Fluente, Espanhol Básico, Português Nativo</p>
+            </div>
+            
+            <div class="skills">
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                    <li>Dart</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>React/Native</li>
+                    <li>Flutter</li>
+                    <li>Git/GitFlow</li>
+                    <li>NextJS</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+
+            <div class="links-card">
+                <h3>Links</h3>
+                <p><a href="https://www.linkedin.com/in/gabriel-fernandes-paiva-b948b2209/">LinkedIn</a></p>
+                <p><a href="https://github.com/GabrielFpaiva">GitHub</a></p>
+                <p><a href="https://gabrielfpaiva.github.io/Personal-portfolio/">Site Pessoal</a></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Experiência Profissional</h2>
+                <div>
+                    <h3>Desenvolvedor Web @ Fábrica de Software - UNIPÊ</h3>
+                    <p>Junho 2022 — Setembro 2022</p>
+                    <p>Desenvolvi um software de controle de produtos utilizando Python, HTML, CSS e JS, trabalhando com o framework Django.</p>
+                    <h3>Desenvolvedor Python @ Polpa de Frutas Ideal</h3>
+                    <p>Junho 2023 — Dezembro 2023</p>
+                    <p>Desenvolvimento de aplicações usando IA para otimizar entregas e coleta de produtos.</p>
+                    <h3>Desenvolvedor Mobile @ Acesso VIP LTDA</h3>
+                    <p>Janeiro 2024 — Atualmente</p>
+                    <p>Desenvolvimento de um aplicativo para eventos utilizando Dart e Flutter, com armazenamento de dados no Firebase.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Educação</h2>
+                <div>
+                    <h3>Bacharelado em Ciência da Computação</h3>
+                    <p>Universidade Federal da Paraíba (UFPB) - Início: Janeiro de 2022 | Previsão de formatura: 2026</p>
+                    <p>CRA: 9.5/10</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projetos Principais</h2>
+                <div class="project-links">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Este é o repositório do meu portfólio, onde compartilho uma variedade de projetos e trabalhos que desenvolvi. Este portfólio reflete minha jornada como desenvolvedor, destacando minhas habilidades, experiência e projetos significativos.</p>
+                    <p><a href="https://github.com/GabrielFpaiva/Personal-portfolio">Repositório do GitHub</a></p>
+                </div>
+
+                <div class="project-links">
+                    <h3>DS Imóveis</h3>
+                    <p>Encontre as melhores propriedades com uma experiência rápida, intuitiva e moderna. Desenvolvido em React e hospedado na Vercel.</p>
+                    <p><a href="https://github.com/GabrielFpaiva/ds-imoveis">Repositório do GitHub</a></p>
+                </div>
+
+                <div class="project-links">
+                    <h3>Sistema para PetShop</h3>
+                    <p>Um aplicativo desktop feito com Java Spring Boot para gerenciamento de produtos, clientes e funcionários. Front-end em JavaFX.</p>
+                    <p><a href="https://github.com/GabrielFpaiva">Repositório do GitHub</a></p>
+                </div>
+
+                <div class="project-links">
+                    <h3>Acesso VIP</h3>
+                    <p>Aplicativo de eventos robusto, parecido com Sympla e Outgol, desenvolvido em Flutter. O aplicativo proporciona uma solução completa para gerenciamento de eventos.</p>
+                    <p><a href="https://acessvip.com/">Site do Acesso VIP</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
