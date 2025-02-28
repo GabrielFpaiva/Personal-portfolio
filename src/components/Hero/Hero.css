@@ -19,7 +19,7 @@
 }
 
 .hero-container::after {
-  top: -3rem;
+  top: -10rem;
   left: -5rem;
 }
 .hero-container::before {
@@ -43,7 +43,6 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;
-  color: rgba(255, 255, 255, 0.658);
 }
 
 .hero-img {

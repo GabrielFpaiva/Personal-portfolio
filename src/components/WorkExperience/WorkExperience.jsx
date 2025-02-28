@@ -5,7 +5,7 @@ import { WORK_EXPERIENCE } from "../../utils/data";
 import Slider from "react-slick";
 
 const WorkExperience = () => {
-  const sliderRef = useRef();
+  const sliderRef = useRef(null);
 
   const settings = {
     dots: false,
@@ -14,6 +14,8 @@ const WorkExperience = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
+    centerMode: true,
+    centerPadding: "30px",
     responsive: [
       {
         breakpoint: 769,
@@ -25,32 +27,31 @@ const WorkExperience = () => {
     ],
   };
 
-  const slideRight = () => {
-    sliderRef.current.slickNext();
-  };
-
-  const slideLeft = () => {
-    sliderRef.current.slickPrev();
-  };
+  // Verifica se WORK_EXPERIENCE é uma função ou já é um array
+  const workExperienceData = Array.isArray(WORK_EXPERIENCE) ? WORK_EXPERIENCE : WORK_EXPERIENCE();
 
   return (
-    <section id='work-exp' className="experience-container">
-      <h5>Trabalhos e Projetos</h5>
+    <section id="work-exp" className="experience-container">
+      <h5>Trabalhos</h5>
 
       <div className="experience-content">
-        <div className="arrow-right" onClick={slideRight}>
-          <span class="material-symbols-outlined">chevron_right</span>
-        </div>
-
-        <div className="arrow-left" onClick={slideLeft}>
-          <span class="material-symbols-outlined">chevron_left</span>
-        </div>
+        <button className="arrow-left" onClick={() => sliderRef.current?.slickPrev()}>
+          <span className="material-symbols-outlined">chevron_left</span>
+        </button>
 
         <Slider ref={sliderRef} {...settings}>
-          {WORK_EXPERIENCE.map((item) => (
-            <ExperienceCard key={item.title} details={item} />
-          ))}
+          {workExperienceData.length > 0 ? (
+            workExperienceData.map((item) => (
+              <ExperienceCard key={item.title} details={item} />
+            ))
+          ) : (
+            <p>Nenhuma experiência disponível.</p>
+          )}
         </Slider>
+
+        <button className="arrow-right" onClick={() => sliderRef.current?.slickNext()}>
+          <span className="material-symbols-outlined">chevron_right</span>
+        </button>
       </div>
     </section>
   );

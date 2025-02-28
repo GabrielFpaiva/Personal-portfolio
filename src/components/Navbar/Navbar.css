@@ -1,20 +1,21 @@
 .nav-wrapper {
   background: rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 0;
+  padding: 0.7rem 0;
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(20px);
   display: flex; 
   justify-content: flex-end;
 }
 
 .nav-content {
-  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 0;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1px 2rem;
   margin: 0 auto;
 }
 
@@ -132,4 +133,60 @@
   .nav-wrapper {
     padding: 0 2rem;
   }
+}
+
+/* New CSS for controls section */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  /* Distance between theme toggle and language button */
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 5px 0;
+  list-style: none;
+  width: 140px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.language-dropdown li {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.language-dropdown li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.language-dropdown li span {
+  margin-right: 8px;
 }

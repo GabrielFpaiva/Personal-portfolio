@@ -60,7 +60,7 @@
     height: 28rem;
     border-radius: 28.125rem;
     background: #1465bb; /* Mesma cor do gradiente */
-    position: absolute;
+    position: relative;
     z-index: -1;
     opacity: 0.3;
     filter: blur(60px);

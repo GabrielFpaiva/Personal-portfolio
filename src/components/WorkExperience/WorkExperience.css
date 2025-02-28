@@ -1,6 +1,32 @@
+/* ExperienceContainer.css */
+
 .experience-container {
   margin: 8rem 0;
   position: relative;
+}
+
+.experience-container::after,
+.experience-container::before {
+  content: " ";
+  width: 25.125rem;
+  height: 25.125rem;
+  border-radius: 28.125rem;
+  background: #1465bb;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(60px);
+  -webkit-filter: blur(60px);
+}
+
+.experience-container::after {
+  top: -18rem;
+  left: -5rem;
+}
+
+.experience-container::before {
+  bottom: 2rem;
+  right: 4rem;
 }
 
 .experience-container h5 {
@@ -56,5 +82,21 @@
 
   .arrow-right {
     right: -1rem;
+  }
+
+  .experience-container::after,
+  .experience-container::before {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .experience-container::after {
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .experience-container::before {
+    bottom: 2rem;
+    right: 0rem;
   }
 }

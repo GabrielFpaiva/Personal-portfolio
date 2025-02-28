@@ -6,8 +6,8 @@
 .skills-container::after,
 .skills-container::before {
   content: " ";
-  width: 28rem;
-  height: 28rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 28.125rem;
   background: #1465bb;
   position: absolute;
@@ -18,8 +18,8 @@
 }
 
 .skills-container::after {
-  top: -3rem;
-  left: -5rem;
+  top: 0rem;
+  left: -4rem;
 }
 
 .skills-container::before {

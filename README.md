@@ -15,7 +15,7 @@ Olá! Meu nome é Gabriel Fernandes, sou um desenvolvedor entusiasta e apaixonad
 
 Aqui estão algumas das minhas principais habilidades técnicas:
 
-### Frontend
+### Front-end
 
 - **HTML5 & CSS3:** 100%
 - **JavaScript:** 100%

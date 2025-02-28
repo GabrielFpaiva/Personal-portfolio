@@ -5,11 +5,8 @@ import SkillsInfoCard from "./SkillsInfoCard/SkillsInfoCard";
 import { SKILLS } from "../../utils/data";
 
 const Skills = () => {
-  const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
-
-  const handleSelectSkill = (data) => {
-    setSelectedSkill(data);
-  };
+  const skillsData = typeof SKILLS === "function" ? SKILLS() : SKILLS; // Garante que SKILLS seja um array
+  const [selectedSkill, setSelectedSkill] = useState(skillsData?.[0] || null);
 
   return (
     <section id="skills" className="skills-container">
@@ -17,25 +14,26 @@ const Skills = () => {
 
       <div className="skills-content">
         <div className="skills">
-          {SKILLS.map((item) => (
-            <SkillCard
-              key={item.title}
-              iconUrl={item.icon}
-              title={item.title}
-              isActive={selectedSkill.title === item.title}
-              onClick={() => {
-                handleSelectSkill(item);
-              }}
-            />
-          ))}
+          {skillsData.length > 0 ? (
+            skillsData.map((item) => (
+              <SkillCard
+                key={item.title}
+                iconUrl={item.icon}
+                title={item.title}
+                isActive={selectedSkill?.title === item.title}
+                onClick={() => setSelectedSkill(item)}
+              />
+            ))
+          ) : (
+            <p>Nenhuma habilidade disponível.</p>
+          )}
         </div>
 
-        <div className="skills-info">
-          <SkillsInfoCard
-            heading={selectedSkill.title}
-            skills={selectedSkill.skills}
-          />
-        </div>
+        {selectedSkill && (
+          <div className="skills-info">
+            <SkillsInfoCard heading={selectedSkill.title} skills={selectedSkill.skills} />
+          </div>
+        )}
       </div>
     </section>
   );
