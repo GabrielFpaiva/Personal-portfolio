@@ -6,7 +6,7 @@ export const SKILLS = () => {
   return [
     {
       title: t("skills.frontend"),
-      icon: "./assets/images/Front-end-icon.png",
+      icon: "./assets/images/frontend-icon.png",
       skills: [
         { skill: "HTML5 & CSS3", percentage: "100%" },
         { skill: "JavaScript", percentage: "100%" },
@@ -77,28 +77,28 @@ export const PROJECTS = () => {
       id: 1,
       name: t("projects.realEstate"),
       description: "Landing page para imobiliária com HTML, CSS e Javascript.",
-      image: "./assets/images/project1.jpg",
-      link: "#",
+      image: "./assets/images/project1.png",
+      link: "https://ds-imoveis.vercel.app",
     },
     {
       id: 2,
       name: t("projects.eventApp"),
       description: "Aplicativo mobile para ingressos de eventos com Flutter.",
       image: "./assets/images/mobile-app.png",
-      link: "#",
+      link: "https://acessvip.com",
     },
     {
       id: 3,
       name: t("projects.spa"),
       description: "Website feito para um SPA e casa de massagem com HTML, CSS e Javascript.",
-      image: "./assets/images/project3.jpg",
-      link: "#",
+      image: "./assets/images/project3.png",
+      link: "https://www.oaspa.com.br",
     },
     {
       id: 4,
       name: t("projects.courses"),
       description: "Plataforma de cursos online com React e Node.js.",
-      image: "./assets/images/project4.jpg",
+      image: "./assets/images/project4.png",
       link: "#",
     },
   ];

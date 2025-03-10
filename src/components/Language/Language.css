@@ -1,63 +1,85 @@
 .language-switcher {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .language-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .language-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .language-flag {
-    width: 30px;
-    height: 20px;
-  }
-  
-  .language-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    padding: 5px 0;
-    list-style: none;
-    width: 150px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-  }
-  
-  .language-dropdown li {
-    padding: 8px 12px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    transition: background 0.3s;
-  }
-  
-  .language-dropdown li:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  .dropdown-flag {
-    width: 20px;
-    height: 14px;
-    margin-right: 10px;
-  }
-  
-  .language-dropdown li span {
-    margin-right: 8px;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+/* Botão de idioma */
+.language-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.language-button:hover {
+  transform: scale(1.1);
+}
+
+/* Bandeira do botão */
+.language-flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown */
+.language-dropdown {
+  position: absolute;
+  top: 50px; /* Agora aparece logo abaixo do botão */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o dropdown */
+  background: rgba(20, 20, 20, 0.7); /* Mais transparente */
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 8px 0;
+  list-style: none;
+  width: 170px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Dropdown visível */
+.language-switcher:hover .language-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Itens do dropdown */
+.language-dropdown li {
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.language-dropdown li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Bandeira dentro do dropdown */
+.dropdown-flag {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
