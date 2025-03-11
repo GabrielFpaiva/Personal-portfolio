@@ -91,7 +91,7 @@ export const PROJECTS = () => {
       id: 3,
       name: t("projects.spa"),
       description: "Website feito para um SPA e casa de massagem com HTML, CSS e Javascript.",
-      image: "./assets/images/project3.png",
+      image: "./assets/images/project2.png",
       link: "https://www.oaspa.com.br",
     },
     {
